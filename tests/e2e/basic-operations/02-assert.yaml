@@ -13,3 +13,11 @@ status:
   databaseName: test-db
   postgresGroup: test-db-group
   succeeded: true
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-secret-my-db-user
+  labels:
+    custom-label: custom-value
+    app: my-db-user
